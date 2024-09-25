@@ -1,0 +1,30 @@
+.card-container{
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+.desc{
+    background-color: #f7f9fa;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+.author-details{
+    display: flex;
+    gap: 1rem;
+
+}
+.author-img img{
+   
+    
+    width: 48px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+.auhtor-name{
+    font-weight:600 ;
+}
