@@ -4,6 +4,11 @@ import styles from "./header.module.css";
 
 const Header = (props)=>{
 
+    const handleNavigation = (event, page) => {
+        event.preventDefault(); 
+        props.setCurrentPage(page); 
+    };
+
     return (
         <nav>
             <div className={styles["header"]}>
@@ -12,8 +17,8 @@ const Header = (props)=>{
                 <span>GeekFoods</span>
             </a>
             <ul className={styles["menu-container"]}>
-                <li><a href="" onClick={()=>props.setCurrentPage('home')} className={props.page=="home"?styles['active']:""}>Home</a></li>
-                <li><a href="" onClick={()=>props.setCurrentPage('quote')} className={props.page=="quote"?styles['active']:""}>Quote</a></li>
+                <li><a href="" onClick={(event)=>handleNavigation(event, 'home')} className={props.page=="home"?styles['active']:""}>Home</a></li>
+                <li><a href="" onClick={(event)=>handleNavigation(event, 'quote')} className={props.page=="quote"?styles['active']:""}>Quote</a></li>
                 <li><a href="">Resturants</a></li>
                 <li><a href="">Foods</a></li>
                 <li><a href="">Contact</a></li>

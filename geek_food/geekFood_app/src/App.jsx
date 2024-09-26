@@ -14,7 +14,7 @@ function App() {
         return <Home />;
 
       case 'quote':
-        return "Page not Found";
+        return <div>Page not Found</div>;
 
       default:
         return <Home />; 
