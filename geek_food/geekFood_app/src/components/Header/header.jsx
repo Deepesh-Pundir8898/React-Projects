@@ -2,7 +2,8 @@ import headerLogo from "./header-images/header-logo.svg";
 import styles from "./header.module.css";
 
 
-const Header = ()=>{
+const Header = (props)=>{
+//    /quote
     return (
         <nav>
             <div className={styles["header"]}>
@@ -11,8 +12,8 @@ const Header = ()=>{
                 <span>GeekFoods</span>
             </a>
             <ul className={styles["menu-container"]}>
-                <li><a href="">Home</a></li>
-                <li><a href="">Quote</a></li>
+                <li><a href={`http://localhost:5173/${props.page}`} onClick={()=>props.setCurrentPage('home')} className={props.page=="home"?styles['active']:""}>Home</a></li>
+                <li><a href={`http://localhost:5173/${props.page}`} onClick={()=>props.setCurrentPage('quote')} className={props.page=="quote"?styles['active']:""}>Quote</a></li>
                 <li><a href="">Resturants</a></li>
                 <li><a href="">Foods</a></li>
                 <li><a href="">Contact</a></li>

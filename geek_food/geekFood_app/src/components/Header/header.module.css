@@ -57,6 +57,9 @@ nav .menu-container li>a{
         
     }
 }
+.active{
+    color: #1c4ed9 !important;;
+}
 
 /* media query header */
 
