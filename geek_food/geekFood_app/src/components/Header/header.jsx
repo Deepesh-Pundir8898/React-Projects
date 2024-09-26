@@ -3,7 +3,7 @@ import styles from "./header.module.css";
 
 
 const Header = (props)=>{
-    
+
     return (
         <nav>
             <div className={styles["header"]}>
@@ -12,8 +12,8 @@ const Header = (props)=>{
                 <span>GeekFoods</span>
             </a>
             <ul className={styles["menu-container"]}>
-                <li><a href={props.page} onClick={()=>props.setCurrentPage('home')} className={props.page=="home"?styles['active']:""}>Home</a></li>
-                <li><a href={props.page} onClick={()=>props.setCurrentPage('quote')} className={props.page=="quote"?styles['active']:""}>Quote</a></li>
+                <li><a href="" onClick={()=>props.setCurrentPage('home')} className={props.page=="home"?styles['active']:""}>Home</a></li>
+                <li><a href="" onClick={()=>props.setCurrentPage('quote')} className={props.page=="quote"?styles['active']:""}>Quote</a></li>
                 <li><a href="">Resturants</a></li>
                 <li><a href="">Foods</a></li>
                 <li><a href="">Contact</a></li>
