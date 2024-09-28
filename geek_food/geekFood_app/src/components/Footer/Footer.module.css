@@ -22,6 +22,7 @@
 }
 .footer-sub-container ul{
     display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
     li{
         list-style-type: none;
@@ -44,3 +45,19 @@
         color: #494c53;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .footer-container{
+        padding: 2rem;
+    }
+    .footer-sub-container{
+        width: 100%;
+        p{
+            width: 100%;
+        }
+    }
+    .footer-sub-container ul{
+        align-items: center;
+        justify-content: center;
+    }
+ }

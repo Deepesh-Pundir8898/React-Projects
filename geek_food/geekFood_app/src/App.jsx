@@ -5,6 +5,8 @@ import './App.css'
 import Home from './containers/Home/Home'
 import Header from './components/Header/header'
 import Footer from './components/Footer/Footer'
+import { Quotes } from './containers/Quotes/Quotes'
+import Restaurants from './containers/Restaurants/Restaurants'
 
 function App() {
   const [currentPage, setCurrentPage] =useState('home');
@@ -14,7 +16,10 @@ function App() {
         return <Home />;
 
       case 'quote':
-        return <div>Page not Found</div>;
+        return <Quotes />;
+
+      case 'restaurant':
+        return <Restaurants />
 
       default:
         return <Home />; 

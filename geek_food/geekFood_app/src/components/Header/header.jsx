@@ -18,8 +18,11 @@ const Header = (props)=>{
             </a>
             <ul className={styles["menu-container"]}>
                 <li><a href="" onClick={(event)=>handleNavigation(event, 'home')} className={props.page=="home"?styles['active']:""}>Home</a></li>
+
                 <li><a href="" onClick={(event)=>handleNavigation(event, 'quote')} className={props.page=="quote"?styles['active']:""}>Quote</a></li>
-                <li><a href="">Resturants</a></li>
+
+                <li><a href="" onClick={(event)=>handleNavigation(event,'restaurant')}className={props.page=="restaurant"?styles['active']:""}>Resturants</a></li>
+
                 <li><a href="">Foods</a></li>
                 <li><a href="">Contact</a></li>
             </ul>

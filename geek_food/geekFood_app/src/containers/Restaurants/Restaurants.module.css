@@ -1,0 +1,31 @@
+.container{
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    gap: 1.5rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+  .filter-container{
+    max-width: 85%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    input{
+        padding: 0.6rem;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        border:1px solid #e4e6eb;
+    }
+  }
+  .rating-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+  }
