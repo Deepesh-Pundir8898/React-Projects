@@ -4,6 +4,8 @@ import { useState } from 'react'
 import logo from "../../assets/logo.svg"
 import ourlogo from "../../assets/portfolio-high-resolution-logo-transparent.png"
 import underline from "../../assets/nav_underline.svg"
+import theme_pattern from "../../assets/theme_pattern.svg"
+import mylogo from "../../assets/portfolio-logo.png"
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Navbar = () => {
@@ -13,7 +15,11 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-        <img src={ourlogo} alt=""  width={"180px"}/>
+      {/* <div className='ourlogo'>
+        <h1>Deepesh Pundir</h1>
+        <img src={theme_pattern} alt=""  width={"150px"}/>
+      </div> */}
+        <img src={mylogo} alt=""  width={"250px"}/>
         <ul className='nav-menu'>
             <li><AnchorLink className='anchor-link'  href='#home'><p onClick={()=>setMenu("home")}>Home</p></AnchorLink>{menu === "home" ? <img src={underline} />:<></>} </li>
             <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={()=>setMenu("about")}>About</p></AnchorLink>{menu === "about" ? <img src={underline} />:<></>} </li>

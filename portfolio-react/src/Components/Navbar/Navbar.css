@@ -9,6 +9,15 @@
     /* border: 1px solid red; */
     
 }
+.ourlogo{
+    position: relative;
+    >img{
+        position: absolute;
+        bottom: 0;
+        right: -15px;
+        z-index: -1;
+    }
+}
 .nav-menu{
     display: flex;
     align-items: center;
@@ -19,6 +28,7 @@
         cursor: pointer;
     }
 }
+
 .nav-connect{
     padding: 18px 30px;
     border-radius: 50px;
