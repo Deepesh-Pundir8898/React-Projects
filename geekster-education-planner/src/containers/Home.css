@@ -85,3 +85,6 @@ tbody tr td{
 .increment-hour{
     background-color: green;
 }
+.delete{
+    background-color: red;
+}

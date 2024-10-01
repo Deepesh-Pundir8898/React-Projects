@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const EducationPlanner = ({ subjects, updateHours }) => {
+export const EducationPlanner = ({ subjects, updateHours , deleteData}) => {
   return (
       <table border={1}>
         <thead>
@@ -18,6 +18,7 @@ export const EducationPlanner = ({ subjects, updateHours }) => {
               <td >
                 <button className='decrement-hour' onClick={() => updateHours(index, -1)}>-</button>
                 <button className='increment-hour' onClick={() => updateHours(index, 1)}>+</button>
+                <button className='delete' onClick={()=> deleteData(index) }>X</button>
               </td>
             </tr>
           ))}

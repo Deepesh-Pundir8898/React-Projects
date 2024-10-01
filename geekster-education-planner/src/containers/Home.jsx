@@ -35,13 +35,22 @@ const Home = () => {
 
     setSubjects(newSubjects);
   };
+  const deleteData =(index)=>{
+    const confrimation = confirm("Are you sure you want to delete the data?")
+    if(confrimation){
+      const newSubjects = [...subjects];
+      newSubjects.splice(index, 1);
+      setSubjects(newSubjects);
+    }
+   
+  }
 
   return (
     <>
       <div className="container">
         <h1>Geekster Education Planner</h1>
         <EducationPlannerForm addSubject={addSubject} />
-        <EducationPlanner subjects={subjects} updateHours={updateHours} />
+        <EducationPlanner subjects={subjects} updateHours={updateHours} deleteData={deleteData} />
       </div>
     </>
   );
