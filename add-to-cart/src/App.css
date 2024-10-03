@@ -64,7 +64,9 @@
     aspect-ratio: 1/1;
     height: fit-content;
   }
-  
+  .main-container h1{
+    text-decoration: underline;
+  }
   
   .product-item {
     width: 200px;
@@ -77,6 +79,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+   
     h2{
         font-size: 1.2rem;
     }
@@ -106,10 +109,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         gap: 1rem;
         list-style-type: none;
         box-shadow: 0 0 2px rgba(0,0,0,0.5);
         padding: 1rem;
+        
     }
     li>div{
         text-wrap: nowrap;
