@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
   }
   .menu{
     display: flex;
@@ -16,6 +15,8 @@
     color: white;
     padding: 1.5rem 5rem;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
   }
   .cart-item{
     position: relative;
@@ -58,11 +59,16 @@
     gap: 1rem;
     padding: 1rem;
   }
+  .product-list img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    height: fit-content;
+  }
   
   
   .product-item {
     width: 200px;
-    height: 250px;
+    height: 300px;
     border: 1px solid #ccc;
     padding: 1rem;
     margin-bottom: 10px;
@@ -132,4 +138,20 @@ button:hover{
     text-align: center;
     max-height: 100px;
     text-wrap: wrap!important;
+}
+@media screen and (max-width:1000px) {
+    .main-container{
+        flex-direction: column;
+    }
+    .menu h1{
+        display: none;
+    }
+    .products{
+        width: 100%;
+        margin: 0.5rem;
+    }
+    .cart{
+        width: 100%;
+        margin: 0.5rem;
+    }
 }
