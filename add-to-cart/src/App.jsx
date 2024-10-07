@@ -141,7 +141,6 @@ function App() {
   const removeFromCart = (index) => {
     const newCartItems = [...cartItems];
     newCartItems.splice(index, 1);
-    console.log(newCartItems)
     setCartItems(newCartItems);
   };
 
